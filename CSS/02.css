@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+body {
+    background-image: url('/Images/Image13.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    opacity: 0.5;
+}
+
+h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 102px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 248px;
+}
+
+/* Navbar icons change code */
+.ico-home {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 48px;
+    top: 26px;
+}
+
+.ico-ham {
+    height: 30px;
+    width: 30px;
+    float: right;
+    position: relative;
+    right: -1400px;
+    top: 26px;
+}
+
+.img-first {
+    position: absolute;
+}
+
+.hov-ico-home {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 47px;
+    top: 26px;
+    display: none;
+}
+
+.img-first:hover .hov-ico-home {
+    display: inline;
+}
+
+.hov-ico-ham {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 1402px;
+    top: 29px;
+    display: none;
+}
+
+.img-second {
+    position: absolute;
+}
+
+.img-second:hover .hov-ico-ham {
+    display: inline;
+}
+
+.img-second:hover .ico-ham {
+    display: none;
+}

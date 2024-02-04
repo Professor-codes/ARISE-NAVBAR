@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(146, 145, 147);
+}
+
+.main {
+    background-size: cover;
+    background-image: url('/Images/Image13.jpg');
+}
+
+.navbar {
+    height: 86px;
+    background-color: rgba(255, 255, 255, 0.696);
+    box-shadow: rgba(0, 0, 0) 1.95px 1.95px 14.6px;
+    position: sticky;
+    top: 0;
+}
+
+/* Image change code */
+.img-first {
+    position: absolute;
+}
+
+.img-second {
+    position: absolute;
+}
+
+.ico-home {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 48px;
+    top: 26px;
+}
+
+.hov-ico-home {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 47px;
+    top: 26px;
+    display: none;
+}
+
+.img-first:hover .hov-ico-home {
+    display: inline;
+}
+
+.ico-ham {
+    height: 30px;
+    width: 30px;
+    float: right;
+    position: relative;
+    right: -1400px;
+    top: 26px;
+}
+
+.hov-ico-ham {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 1402px;
+    top: 29px;
+    display: none;
+}
+
+
+.img-second:hover .hov-ico-ham {
+    display: inline;
+}
+
+.img-second:hover .ico-ham {
+    display: none;
+}
+
+/* ------------------------- */
+
+.mainmenu {
+    margin-top: 22px;
+    /* background-color: black; */
+}
+
+.submenu {
+    display: none;
+    color: white;
+    padding: 10px 0px 10px 24px;
+    font-size: 28px;
+    margin-left: 20px;
+    list-style-type: none;
+    font-family: 'Rajdhani', sans-serif;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.s-first {
+    width: 0px;
+    opacity: 0.3;
+}
+
+.s-first:hover {
+    opacity: 1;
+    transition: 0.5s ease-out;
+    border-bottom: 2px solid white;
+    padding-right: 202px;
+}
+
+.s-second {
+    width: 0px;
+    opacity: 0.3;
+}
+
+.s-second:hover {
+    opacity: 1;
+    transition: 0.5 ease-out;
+    border-bottom: 2px solid white;
+    padding-right: 202px;
+}
+
+.s-third {
+    width: 0px;
+    opacity: 0.3;
+}
+
+.s-third:hover {
+    opacity: 1;
+    transition: 0.5 ease-out;
+    border-bottom: 2px solid white;
+    padding-right: 202px;
+}
+
+.s-fourth {
+    width: 0px;
+    opacity: 0.3;
+}
+
+.s-fourth:hover {
+    opacity: 1;
+    transition: 0.5 ease-out;
+    border-bottom: 2px solid white;
+    padding-right: 202px;
+}
+
+.main:hover .submenu {
+    display: block;
+    transition: 2s ease-out;
+    cursor: pointer;
+    animation: submenu 1s ease-out 1 forwards;
+}
+
+/* .main:hover .block {
+    display: block;
+} */
+
+@keyframes submenu {
+    from {
+        transform: translateX(0px);
+        height: 0px;
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(1348px);
+        height: 38px;
+    }
+}
